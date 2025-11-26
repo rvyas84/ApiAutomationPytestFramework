@@ -1,0 +1,8 @@
+{
+    "new_user":{
+        "name": "Foo Bar",
+        "email": "xxx@xxx.com",
+        "gender": "female",
+        "status": "active"
+    }
+}
