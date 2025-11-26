@@ -12,7 +12,6 @@ This repository demonstrates how to perform REST API automation based on Python 
 
 # 📦 Requirements
 Install required dependencies:
-    
     ```bash
     pip install -r requirements.txt
     ```
@@ -20,7 +19,6 @@ Install required dependencies:
 # 🚀 How to Run Tests
 
 You can run tests simply using:
-    
     ```bash
     pytest -s
     ```
