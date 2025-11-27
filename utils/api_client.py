@@ -1,14 +1,17 @@
 import requests
 import random
 import string
+import os
 
 class APIClient:
     BASE_URL = "https://gorest.co.in/public/v2"
 
     def __init__(self):
+        self.token = os.getenv("PI_TOKEN")
+
         self.headers = {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 4d10ef7527d6f8e3f5a961df8d074dc2df34d6de7f36edff5efb026b65ec26c6"
+            "Authorization": f"Bearer {self.token}"
         }
     
     def get(self, endpoint):
