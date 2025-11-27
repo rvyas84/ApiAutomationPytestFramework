@@ -41,7 +41,7 @@ jobs:
             echo "Current directory:"
             pwd
             source venv/bin/activate
-            pytest -s --html=report.html -self-contained-html
+            pytest -s tests/ --html=report.html -self-contained-html
 
       - name: Upload report
         uses: actions/upload-artifact@v4
