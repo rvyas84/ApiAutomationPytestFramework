@@ -40,6 +40,7 @@ jobs:
         run: |
             echo "Current directory:"
             pwd
+            ls
             source venv/bin/activate
             pytest -s tests/ --html=report.html -self-contained-html
 
