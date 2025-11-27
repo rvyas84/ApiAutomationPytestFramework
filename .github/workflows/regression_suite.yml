@@ -36,7 +36,7 @@ jobs:
       
       - name: Run run-tests
         env:
-          GOREST_API_TOKEN: ${{secrets.API_TOKEN}}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
         run: |
             echo "Current directory:"
             pwd
