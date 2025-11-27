@@ -7,11 +7,14 @@ class APIClient:
     BASE_URL = "https://gorest.co.in/public/v2"
 
     def __init__(self):
-        self.token = os.getenv("API_TOKEN")
+        token = os.getenv("API_TOKEN")
+
+        if not token:
+            raise ValueError("⚠ GOREST_API_TOKEN environment variable not set")
 
         self.headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.token}"
+            "Authorization": f"Bearer {token}"
         }
     
     def get(self, endpoint):
