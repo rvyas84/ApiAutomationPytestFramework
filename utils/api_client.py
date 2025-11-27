@@ -12,8 +12,6 @@ class APIClient:
     def __init__(self):
         token = os.getenv("API_TOKEN")
 
-        print(token)
-
         if not token:
             raise ValueError("⚠ GOREST_API_TOKEN environment variable not set")
 
