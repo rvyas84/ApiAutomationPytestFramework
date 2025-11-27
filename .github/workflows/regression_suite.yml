@@ -38,10 +38,11 @@ jobs:
       
       - name: Run run-tests
         run: |
+            python3 -m venv venv
+            source venv/bin/activate
             echo "Current directory:"
             pwd
             ls
-            source venv/bin/activate
             pytest -s tests/ --html=report.html -self-contained-html
 
       - name: Upload report
