@@ -2,6 +2,9 @@ import requests
 import random
 import string
 import os
+from dotenv import load_dotenv
+
+load_dotenv() 
 
 class APIClient:
     BASE_URL = "https://gorest.co.in/public/v2"
