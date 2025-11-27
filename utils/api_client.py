@@ -7,7 +7,7 @@ class APIClient:
     BASE_URL = "https://gorest.co.in/public/v2"
 
     def __init__(self):
-        self.token = os.getenv("PI_TOKEN")
+        self.token = os.getenv("API_TOKEN")
 
         self.headers = {
             "Content-Type": "application/json",
